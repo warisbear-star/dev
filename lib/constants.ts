@@ -1,6 +1,6 @@
-export const SITE_NAME = "DEV ATLAS";
+export const SITE_NAME = "Information Technology Skills";
 export const SITE_DESCRIPTION =
-  "แผนที่ความรู้เชิงโต้ตอบสำหรับนักพัฒนา — เข้าใจเทคโนโลยีผ่านภาพและ animation";
+  "เว็บเพื่อส่งเสริมทักษะด้านเทคโนโลยีสารสนเทศ - animation";
 
 export const NAV_LINKS = [
   { href: "/", label: "สำรวจ" },

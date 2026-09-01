@@ -51,7 +51,11 @@ export function LearningPathView({ path }: LearningPathViewProps) {
           <p className="mt-1 text-sm text-muted-foreground">
             ดู flow จริงตั้งแต่ต้นจนจบหลังเรียนครบทุกบท
           </p>
-          <Button className="mt-3" render={<Link href={`/scenarios/${path.scenarioSlug}`} />}>
+          <Button
+            className="mt-3"
+            nativeButton={false}
+            render={<Link href={`/scenarios/${path.scenarioSlug}`} />}
+          >
             ไปที่ Scenario →
           </Button>
         </div>

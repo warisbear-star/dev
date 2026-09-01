@@ -41,7 +41,7 @@ export function Navbar() {
 
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
           <span className="flex size-7 items-center justify-center rounded-md bg-primary text-xs text-primary-foreground">
-            DA
+            ITS
           </span>
           <span className="hidden sm:inline">{SITE_NAME}</span>
         </Link>

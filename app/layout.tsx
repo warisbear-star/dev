@@ -32,8 +32,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://dev-atlas.local"),
   title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
+    default: "ITS",
+    template: `%s | ITS`,
   },
   description: SITE_DESCRIPTION,
   openGraph: {

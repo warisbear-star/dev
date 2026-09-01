@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section className="container flex flex-col items-center px-4 py-16 text-center md:py-24">
       <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-primary text-lg font-bold text-primary-foreground">
-        DA
+        ITS
       </div>
       <h1 className="text-4xl font-bold tracking-tight md:text-5xl">{SITE_NAME}</h1>
       <p className="prose-lead mt-3 max-w-xl">{SITE_DESCRIPTION}</p>
