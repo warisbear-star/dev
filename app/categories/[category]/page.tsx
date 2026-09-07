@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   const category = getCategoryBySlug(categorySlug);
 
   if (!category) {
-    return { title: "Category Not Found" };
+    return { title: "ไม่พบหมวดหมู่" };
   }
 
   return {
@@ -95,14 +95,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           categorySlug !== "git-github" &&
           categorySlug !== "programming" &&
           categorySlug !== "hardware" && (
-          <p className="mt-1 text-sm text-muted-foreground">{concepts.length} concepts</p>
+          <p className="mt-1 text-sm text-muted-foreground">{concepts.length} แนวคิด</p>
         )}
       </div>
 
       {categoryFlows.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-4 text-lg font-semibold">
-            {categorySlug === "network" ? "🎬 Protocol Animations" : "🎬 Concept Animations"}
+            {categorySlug === "network" ? "🎬 ภาพเคลื่อนไหวโปรโตคอล" : "🎬 ภาพเคลื่อนไหวแนวคิด"}
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {categoryFlows.map((viz) => (
@@ -116,7 +116,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                       <Play className="size-4 text-muted-foreground" />
                     </div>
                     <CardTitle as="h3" className="text-sm">{viz.title}</CardTitle>
-                    <CardDescription className="text-xs">{viz.steps.length} steps</CardDescription>
+                    <CardDescription className="text-xs">{viz.steps.length} ขั้นตอน</CardDescription>
                   </CardHeader>
                 </Card>
               </Link>

@@ -130,7 +130,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         )}
 
         <Button variant="ghost" render={<Link href={`/graph?focus=${concept.slug}`} />}>
-          View in Knowledge Graph
+          View in แผนผังความรู้
           <ArrowRight className="size-4" />
         </Button>
       </div>

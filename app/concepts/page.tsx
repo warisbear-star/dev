@@ -4,7 +4,7 @@ import { ConceptCard } from "@/components/concept/concept-card";
 import { getAllConcepts } from "@/lib/content/get-concepts";
 
 export const metadata: Metadata = {
-  title: "All Concepts",
+  title: "แนวคิดทั้งหมด",
   description: "Browse all technology concepts in DEV ATLAS",
 };
 
@@ -14,7 +14,7 @@ export default function ConceptsPage() {
   return (
     <div className="container px-4 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">All Concepts</h1>
+        <h1 className="text-3xl font-bold">แนวคิดทั้งหมด</h1>
         <p className="mt-2 text-muted-foreground">
           Explore {concepts.length} technology concepts
         </p>

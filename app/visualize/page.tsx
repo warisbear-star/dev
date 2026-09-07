@@ -7,8 +7,8 @@ import { getAllCategories } from "@/lib/content/get-concepts";
 import { groupVisualizationsByCategory } from "@/lib/visualization/get-visualizations";
 
 export const metadata: Metadata = {
-  title: "Visualizations",
-  description: "Interactive animations showing how protocols and concepts work",
+  title: "ภาพเคลื่อนไหว",
+  description: "ดูการทำงานของโปรโตคอลและแนวคิดต่าง ๆ แบบทีละขั้นตอน",
 };
 
 export default function VisualizeIndexPage() {
@@ -20,9 +20,9 @@ export default function VisualizeIndexPage() {
   return (
     <div className="container px-4 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold">Visualizations</h1>
+        <h1 className="text-3xl font-bold">ภาพเคลื่อนไหว</h1>
         <p className="mt-2 text-muted-foreground">
-          ดูการทำงานของ protocol และ concept ทีละ step — กด Play แล้วตามทีละขั้น
+          ดูการทำงานของโปรโตคอลและแนวคิดต่าง ๆ ทีละขั้นตอน — กดเล่นแล้วติดตามได้เลย
         </p>
       </div>
 
@@ -47,7 +47,7 @@ export default function VisualizeIndexPage() {
                       </CardTitle>
                       <CardDescription>{viz.description}</CardDescription>
                       <p className="text-xs text-muted-foreground">
-                        {viz.steps.length} steps · concept: {viz.conceptSlug}
+                        {viz.steps.length} ขั้นตอน · แนวคิด: {viz.conceptSlug}
                       </p>
                     </CardHeader>
                   </Card>

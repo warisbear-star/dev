@@ -1,7 +1,7 @@
 [
   {
     "slug": "network",
-    "name": "Network",
+    "name": "เครือข่าย",
     "icon": "globe",
     "description": "อุปกรณ์สื่อสารกันบนเครือข่ายอย่างไร",
     "color": "#3B82F6",
@@ -13,7 +13,7 @@
   },
   {
     "slug": "programming",
-    "name": "Programming",
+    "name": "การเขียนโปรแกรม",
     "icon": "code",
     "description": "API, OOP, Data Structure, รูปแบบข้อมูล และสถาปัตยกรรม client-server",
     "color": "#8B5CF6",
@@ -25,7 +25,7 @@
   },
   {
     "slug": "database",
-    "name": "Database",
+    "name": "ฐานข้อมูล",
     "icon": "database",
     "description": "การจัดเก็บ ค้นหา และจัดการข้อมูล",
     "color": "#10B981",
@@ -36,7 +36,7 @@
   },
   {
     "slug": "security",
-    "name": "Security",
+    "name": "ความปลอดภัย",
     "icon": "shield",
     "description": "การยืนยันตัวตน สิทธิ์การเข้าถึง และการป้องกัน",
     "color": "#EF4444",
@@ -48,7 +48,7 @@
   },
   {
     "slug": "ai",
-    "name": "AI",
+    "name": "ปัญญาประดิษฐ์",
     "icon": "brain",
     "description": "ปัญญาประดิษฐ์และ machine learning",
     "color": "#F59E0B",
@@ -59,9 +59,9 @@
   },
   {
     "slug": "cloud",
-    "name": "Cloud",
+    "name": "คลาวด์",
     "icon": "cloud",
-    "description": "Cloud computing และระบบกระจาย",
+    "description": "การประมวลผลบนคลาวด์และระบบกระจาย",
     "color": "#06B6D4",
     "startHere": [
       "cloud-computing",
@@ -93,9 +93,9 @@
   },
   {
     "slug": "cli",
-    "name": "CLI",
+    "name": "คำสั่งเทอร์มินัล",
     "icon": "terminal",
-    "description": "Terminal commands for Unix/Linux/macOS and Windows/PowerShell",
+    "description": "คำสั่งเทอร์มินัลสำหรับ Unix/Linux/macOS และ Windows/PowerShell",
     "color": "#64748B",
     "startHere": [
       "pwd",
@@ -105,7 +105,7 @@
   },
   {
     "slug": "git-github",
-    "name": "Git & GitHub",
+    "name": "Git และ GitHub",
     "icon": "git-branch",
     "description": "คำสั่ง Git และ workflow บน GitHub ที่ใช้บ่อย",
     "color": "#24292F",
@@ -117,7 +117,7 @@
   },
   {
     "slug": "hardware",
-    "name": "Hardware",
+    "name": "ฮาร์ดแวร์",
     "icon": "cpu",
     "description": "ชิป หน่วยความจำ อุปกรณ์ และเครื่องจริงที่ซอฟต์แวร์ทำงานอยู่",
     "color": "#78716C",
