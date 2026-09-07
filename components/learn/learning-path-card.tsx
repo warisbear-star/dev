@@ -24,8 +24,8 @@ export function LearningPathCard({ path }: LearningPathCardProps) {
 
   return (
     <Link href={`/learn/${path.slug}`}>
-      <Card className="group h-full interactive-card">
-        <CardHeader>
+      <Card className="group h-full interactive-card hover:-translate-y-0.5">
+        <CardHeader className="p-5">
           <div className="mb-2 flex items-center justify-between">
             <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
               <Icon className="size-5 text-primary" />

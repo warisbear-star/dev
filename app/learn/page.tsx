@@ -12,12 +12,12 @@ export default function LearnPage() {
   const paths = getAllLearningPaths();
 
   return (
-    <div className="container px-4 py-10">
-      <div className="mb-8 max-w-2xl">
+    <div className="container px-4 py-12 md:py-14">
+      <div className="mb-10 max-w-3xl">
         <h1 className="text-3xl font-bold">เส้นทางการเรียนรู้</h1>
         <p className="mt-2 text-muted-foreground">
-          ไม่รู้จะเริ่มจากไหน? เลือกเส้นทางที่ตรงกับเป้าหมาย — แต่ละ path จัดลำดับบทเรียนให้แล้ว
-          พร้อม scenario ท้ายทางเพื่อทดสอบความเข้าใจ
+          ไม่รู้จะเริ่มจากไหน? เลือกเส้นทางที่ตรงกับเป้าหมาย — แต่ละเส้นทางจัดลำดับบทเรียนให้แล้ว
+          พร้อมสถานการณ์จำลองท้ายเส้นทางเพื่อทดสอบความเข้าใจ
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

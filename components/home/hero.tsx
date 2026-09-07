@@ -11,18 +11,20 @@ export function Hero() {
   const scenarioCount = getAllScenarios().length;
 
   return (
-    <section className="container flex flex-col items-center px-4 py-16 text-center md:py-24">
+    <section className="container flex flex-col items-center px-4 py-14 text-center md:py-20">
+      <div className="w-full max-w-3xl">
       <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-primary text-lg font-bold text-primary-foreground">
         ITS
       </div>
       <h1 className="text-4xl font-bold tracking-tight md:text-5xl">{SITE_NAME}</h1>
       <p className="prose-lead mt-3 max-w-xl">{SITE_DESCRIPTION}</p>
       <p className="mt-4 text-sm text-muted-foreground">
-        {conceptCount} concepts · {vizCount} animations · {categoryCount} categories ·{" "}
-        {scenarioCount} scenarios
+        {conceptCount} แนวคิด · {vizCount} ภาพเคลื่อนไหว · {categoryCount} หมวดหมู่ ·{" "}
+        {scenarioCount} สถานการณ์จำลอง
       </p>
-      <div className="mt-8 w-full max-w-md">
+      <div className="mx-auto mt-8 w-full max-w-xl">
         <CommandSearch />
+      </div>
       </div>
     </section>
   );

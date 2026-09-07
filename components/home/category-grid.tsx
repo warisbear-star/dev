@@ -34,8 +34,13 @@ export function CategoryGrid() {
   const categories = getAllCategories();
 
   return (
-    <section className="container px-4 py-12">
-      <h2 className="mb-6 text-xl font-semibold">สำรวจตามหมวด</h2>
+    <section className="container px-4 py-12 md:py-14">
+      <div className="mb-7 flex items-end justify-between gap-4">
+        <div>
+          <p className="mb-1 text-sm font-medium text-primary">เริ่มต้นจากตรงนี้</p>
+          <h2 className="text-2xl font-semibold">สำรวจตามหมวดหมู่</h2>
+        </div>
+      </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {categories.map((category) => {
           const Icon = iconMap[category.icon as keyof typeof iconMap] ?? Globe;

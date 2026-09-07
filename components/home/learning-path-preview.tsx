@@ -6,8 +6,8 @@ export function LearningPathPreview() {
   const paths = getAllLearningPaths();
 
   return (
-    <section className="container px-4 py-12">
-      <div className="mb-6 flex items-end justify-between gap-4">
+    <section className="container px-4 py-12 md:py-14">
+      <div className="mb-7 flex items-end justify-between gap-4">
         <div>
           <h2 className="text-xl font-semibold">เส้นทางการเรียนรู้</h2>
           <p className="mt-1 text-sm text-muted-foreground">

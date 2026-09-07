@@ -63,8 +63,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         : [];
 
   return (
-    <div className="container px-4 py-10">
-      <div className="mb-8">
+    <div className="container px-4 py-12 md:py-14">
+      <div className="mb-10 max-w-3xl">
         <h1 className="text-3xl font-bold" style={{ color: category.color }}>
           {category.name}
         </h1>
@@ -101,10 +101,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       {categoryFlows.length > 0 && (
         <section className="mb-10">
-          <h2 className="mb-4 text-lg font-semibold">
+          <h2 className="mb-4 text-xl font-semibold">
             {categorySlug === "network" ? "🎬 ภาพเคลื่อนไหวโปรโตคอล" : "🎬 ภาพเคลื่อนไหวแนวคิด"}
           </h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categoryFlows.map((viz) => (
               <Link key={viz.slug} href={`/visualize/${viz.slug}`}>
                 <Card className="interactive-card">
@@ -147,7 +147,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="space-y-10">
           {programmingGroups.dataStructures.length > 0 && (
             <section>
-              <h2 className="mb-4 text-lg font-semibold">📊 Data Structures</h2>
+              <h2 className="mb-4 text-xl font-semibold">📊 โครงสร้างข้อมูล</h2>
               <p className="mb-4 max-w-2xl text-sm text-muted-foreground">
                 โครงสร้างข้อมูลพื้นฐาน — เลือกให้เหมาะกับ operation ที่ทำบ่อย
               </p>
@@ -160,7 +160,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           )}
           {programmingGroups.core.length > 0 && (
             <section>
-              <h2 className="mb-4 text-lg font-semibold">💻 Core Concepts</h2>
+              <h2 className="mb-4 text-xl font-semibold">💻 แนวคิดพื้นฐาน</h2>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {programmingGroups.core.map((concept) => (
                   <ConceptCard key={concept.slug} concept={concept} />
@@ -177,8 +177,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       ) : (
         <div className="rounded-xl border border-dashed border-border/60 p-12 text-center text-muted-foreground">
-          <p>No concepts in this category yet.</p>
-          <p className="mt-1 text-sm">Coming soon in the next sprint.</p>
+          <p>หมวดหมู่นี้ยังไม่มีเนื้อหา</p>
+          <p className="mt-1 text-sm">กำลังเตรียมเนื้อหาเพิ่มเติม</p>
         </div>
       )}
     </div>
