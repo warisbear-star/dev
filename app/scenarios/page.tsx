@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import { ScenarioPreview } from "@/components/home/scenario-preview";
 
@@ -20,3 +20,5 @@ export default function สถานการณ์Page() {
     </div>
   );
 }
+
+

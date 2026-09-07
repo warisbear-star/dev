@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import { QuizHub } from "@/components/quiz/quiz-hub";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "ทดสอบการอ่านเอกสาร — เลือกหัวข้อแล้วตอบคำถามหลังอ่าน concept",
 };
 
-export default function QuizPage() {
+export default function แบบทดสอบPage() {
   return (
     <div className="container px-4 py-10">
       <div className="mb-8 max-w-2xl">
@@ -20,3 +20,5 @@ export default function QuizPage() {
     </div>
   );
 }
+
+

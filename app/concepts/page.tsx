@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import { ConceptCard } from "@/components/concept/concept-card";
 import { getAllConcepts } from "@/lib/content/get-concepts";
 
 export const metadata: Metadata = {
   title: "แนวคิดทั้งหมด",
-  description: "Browse all technology concepts in DEV ATLAS",
+  description: "รวมแนวคิดด้านเทคโนโลยีสำหรับเรียนรู้แบบเข้าใจง่าย",
 };
 
 export default function ConceptsPage() {
@@ -16,7 +16,7 @@ export default function ConceptsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold">แนวคิดทั้งหมด</h1>
         <p className="mt-2 text-muted-foreground">
-          Explore {concepts.length} technology concepts
+          รวม {concepts.length} แนวคิดด้านเทคโนโลยี เรียนรู้ทีละเรื่องอย่างเป็นขั้นตอน
         </p>
       </div>
 
@@ -28,3 +28,4 @@ export default function ConceptsPage() {
     </div>
   );
 }
+
